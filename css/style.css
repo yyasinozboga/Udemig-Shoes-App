@@ -1,0 +1,544 @@
+/* Header Start */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 0 7px black;
+  height: 70px;
+}
+
+.header h1 {
+  color: var(--main-color);
+}
+
+.header h1 span {
+  color: var(--main-color-2);
+  border-bottom: 5px solid var(--main-color-2);
+}
+
+.navbar a {
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.navbar a:hover {
+  background-color: var(--main-color-2);
+  color: white;
+}
+
+.res-menu {
+  display: none;
+  position: absolute;
+  top: -250px;
+  left: 0;
+  width: 100%;
+  list-style: none;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.res-menu.active {
+  top: 70px;
+}
+
+.res-menu-item {
+  padding: 5px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.res-menu-item:hover {
+  background-color: var(--main-color-2);
+}
+
+.res-menu-item:hover a {
+  color: white;
+}
+
+#res-btn {
+  display: none;
+  font-size: 25px;
+  transition: all 0.3s ease;
+}
+
+#res-btn:hover {
+  color: var(--main-color);
+}
+/* Header End */
+
+/* Home Start */
+#home {
+  margin-top: 50px;
+  padding: 0 30px 0 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../Shoes Websit/image/bg1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100vh - 120px);
+}
+
+#home h1 {
+  font-size: 60px;
+  font-style: italic;
+  color: var(--main-color);
+  font-weight: 500;
+}
+
+#home span {
+  font-size: 60px;
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+#home p {
+  width: 70%;
+}
+
+#home .btn {
+  margin-top: 200px;
+  width: 155px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+#home .btn:hover {
+  gap: 10px;
+}
+
+#home div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btn-group button {
+  width: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn-group button:hover {
+  color: var(--main-color);
+}
+/* Home End */
+
+/* Products Start */
+#products {
+  margin-top: 100px;
+  text-align: center;
+}
+
+#products h1:nth-child(1) {
+  margin-bottom: 50px;
+  font-size: 40px;
+  color: var(--main-color-2);
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  box-shadow: 0px 0px 8px var(--main-color-2);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card:hover .card-settings {
+  left: 20px;
+  opacity: 1;
+}
+
+.card-image:hover {
+  transform: scale(1.1);
+}
+
+.card-image {
+  width: 60%;
+  transition: all 0.3s ease;
+}
+
+.card-content {
+  color: gray;
+}
+
+.card-price {
+  font-weight: 600;
+}
+
+.card i {
+  color: goldenrod;
+}
+
+.card button {
+  margin-top: 10px;
+}
+
+.card-settings {
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.card-settings button {
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.card-settings button i {
+  color: black;
+}
+/* Products End */
+
+/* About Start */
+#about {
+  margin: 100px auto 50px;
+  width: 90%;
+  text-align: center;
+}
+
+#about .container {
+  width: 100%;
+  flex-wrap: nowrap;
+  margin-top: 100px;
+}
+
+#about h1 {
+  font-size: 50px;
+}
+
+#about h1 span {
+  color: var(--main-color-2);
+}
+
+.box {
+  width: 160px;
+  background: linear-gradient(to right, var(--main-color-2), var(--main-color));
+  border-radius: 12px;
+  margin-bottom: 10px;
+  padding: 5px;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.box:hover {
+  opacity: 1;
+}
+
+.box img {
+  width: 100%;
+}
+
+.image {
+  width: 45%;
+  padding: 20px;
+  border: 3px solid var(--main-color-2);
+  border-radius: 12px;
+  box-shadow: 0 0 12px var(--main-color-2);
+}
+
+#about .container p {
+  margin-left: 100px;
+  text-align: left;
+  color: var(--main-color-2);
+  border: 3px solid var(--main-color);
+  border-radius: 12px;
+  box-shadow: 0 0 12px var(--main-color);
+  padding: 20px;
+}
+
+#about .btn {
+  margin-top: 50px;
+}
+/* About End */
+
+/* Review Start */
+#review {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#review h1 {
+  margin-bottom: 50px;
+  font-size: 50px;
+}
+
+#review h1 span {
+  color: var(--main-color-2);
+}
+
+#review .container {
+  width: 100%;
+  gap: 20px;
+}
+
+#review .card div:nth-child(1) {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+}
+
+#review .card {
+  width: 550px;
+  height: 230px;
+  box-shadow: 0px 0px 5px #010101;
+  background-color: #f3f0f1;
+}
+
+#review .card-image {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#review .card-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#review .card-content {
+  margin-top: 20px;
+  width: 100%;
+  color: black;
+  text-align: left;
+}
+/* Review End */
+
+/* Services Start */
+#services {
+  text-align: center;
+}
+
+#services h1 {
+  font-size: 50px;
+}
+
+#services h1 span {
+  color: var(--main-color-2);
+}
+
+#services .container {
+  width: 70%;
+}
+
+#services .card {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  box-shadow: none;
+  cursor: auto;
+}
+
+#services .card i {
+  font-size: 60px;
+}
+
+#services .card-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+/* Services End */
+
+/* Login Start */
+#login {
+  background: url("../Shoes Websit/image/loging_bg.png");
+  background-position: center;
+  height: calc(100vh - 120px);
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#login img {
+  width: 45%;
+}
+
+#login .box {
+  opacity: 1;
+  width: 400px;
+  padding: 0;
+  background: transparent;
+}
+
+#login h1 {
+  font-style: italic;
+  font-size: 50px;
+  margin-bottom: 70px;
+}
+
+#login .box div {
+  position: relative;
+  width: 100%;
+}
+
+.form {
+  width: 100%;
+}
+
+.form div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.form-input {
+  width: 100%;
+  border: 2px solid var(--main-color-2);
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-indent: 30px;
+}
+
+#login .box div i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  color: var(--main-color);
+}
+
+.form a {
+  float: right;
+}
+
+.form .btn {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-media .btn {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border-radius: 50%;
+  background: white;
+}
+/* Login End */
+
+/* Footer Start */
+.footer {
+  margin-top: 100px;
+  background-color: #bfbcbd;
+  padding: 30px;
+}
+
+.footer .container {
+  width: 100%;
+  display: grid !important;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: start;
+}
+
+.footer h1 {
+  color: var(--main-color-2);
+  margin-bottom: 20px;
+}
+
+.footer .container div:nth-child(1) i {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.footer .container div:nth-child(1) i:hover {
+  color: var(--main-color);
+}
+
+.footer div:last-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .btn-group {
+  flex-direction: row !important;
+  gap: 10px;
+}
+
+.footer .btn-group a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background-color: white;
+  font-size: 20px;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.footer .btn-group a:hover {
+  color: white;
+  background: linear-gradient(-45deg, var(--main-color), var(--main-color-2));
+}
+
+.footer form input {
+  color: white;
+  background-color: #979797;
+  padding: 10px;
+  border-radius: 30px;
+  text-indent: 10px;
+}
+
+.footer form input::placeholder {
+  color: white;
+}
+
+.footer form .btn {
+  margin-top: 10px;
+}
+/* Footer End */

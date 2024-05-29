@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: linear-gradient(to top, var(--main-color), var(--main-color-2));
+}
+
+:root {
+  --main-color: #c42490;
+  --main-color-2: #621eb1;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.btn {
+  background: linear-gradient(to right, var(--main-color), var(--main-color-2));
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 18px;
+}
+
+input {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
