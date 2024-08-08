@@ -1,4 +1,8 @@
-<h1>Shoes App</h1>
+<h1>Udemig Shoes App</h1>
+
+This project was created by Yasin Özboğa.
+HTML5, CSS3 and JavaScript were used to be compatible with users.
+Icons and toggle menu were used for increase experience of users.
 
 <h1>Techs</h1>
 
